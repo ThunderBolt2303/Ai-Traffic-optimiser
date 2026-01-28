@@ -1,0 +1,12 @@
+/* Traffic Heatmap Styles */
+.heatmap-container {
+    position: relative;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+.heatmap-canvas {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}

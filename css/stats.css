@@ -1,0 +1,63 @@
+/* Stats and Stats Card Styles */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    background: rgba(0, 255, 157, 0.05);
+    border: 1px solid rgba(0, 255, 157, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-value {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+/* Vehicle Breakdown */
+.vehicle-breakdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.vehicle-type {
+    text-align: center;
+    padding: 0.5rem;
+    background: rgba(0, 255, 157, 0.05);
+    border-radius: 6px;
+}
+
+.vehicle-type-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.vehicle-type-count {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .vehicle-breakdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

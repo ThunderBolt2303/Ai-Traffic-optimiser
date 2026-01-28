@@ -1,0 +1,54 @@
+/* Traffic Camera Feed Styles */
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.camera-feed {
+    position: relative;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    border: 2px solid var(--dark);
+}
+
+.camera-feed canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.camera-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    z-index: 2;
+}
+
+.vehicle-count {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 212, 255, 0.9);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .camera-grid {
+        grid-template-columns: 1fr;
+    }
+}

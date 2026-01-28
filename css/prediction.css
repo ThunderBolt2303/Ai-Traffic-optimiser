@@ -1,0 +1,21 @@
+/* Prediction Card Styles */
+.prediction-card {
+    background: rgba(255, 190, 11, 0.1);
+    border: 1px solid var(--warning);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.prediction-title {
+    font-weight: 700;
+    color: var(--warning);
+    margin-bottom: 0.5rem;
+}
+
+.prediction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 190, 11, 0.2);
+}

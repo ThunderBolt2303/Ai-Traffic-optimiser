@@ -1,0 +1,24 @@
+/* Emergency Alert Styles */
+.emergency-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--danger);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 0 5px 30px rgba(255, 0, 110, 0.6);
+    animation: emergencyPulse 0.5s ease-in-out infinite alternate;
+    z-index: 1000;
+    display: none;
+}
+
+.emergency-alert.active {
+    display: block;
+}
+
+@keyframes emergencyPulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
